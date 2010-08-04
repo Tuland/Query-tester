@@ -1,0 +1,7 @@
+?s ?p ?o
+
+
+{ 
+?p rdfs:domain ?o .
+?p rdfs:range ?s .
+}
