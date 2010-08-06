@@ -30,9 +30,9 @@ Edit @username@ and @password@ (development) in @config/database.yml@
 
 h2. Start server 
 
-* Mongrel (port: 3000 [background])
+* Mongrel (port: 3000)
 
-@jruby -S script/server -p 3000 &@
+@jruby -S script/server -p 3000@
 
 ('development mode' temporarily)
 

@@ -54,19 +54,17 @@ class OntologyController < ApplicationController
     
     query_str = prefix_str + select_str + where_str + other_str
     
+    puts "\n******** Query SPARQL ********\n"
+    puts query_str
+    puts "******************************"
+    
     query = QueryFactory.create(query_str)
     qe = QueryExecutionFactory.create(query, MODEL)
     results = qe.execSelect()
     
     sup_model = ModelFactory.createOntologyModel(OntModelSpec::OWL_MEM)
 
-    
-    @results = ResultSetFormatter.asText(results, Prologue.new(sup_model.setNsPrefixes(prefixes_map))) 
-    
-    
-    #prefixes_map.each do |key, value|
-    #  @results.gsub!(value, key + "#")
-    #end
+    @results = ResultSetFormatter.asText(results, Prologue.new(sup_model.setNsPrefixes(prefixes_map)))
     
     
     qe.close()
