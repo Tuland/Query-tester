@@ -6,6 +6,7 @@ include_class 'com.hp.hpl.jena.ontology.Ontology'
 include_class 'com.hp.hpl.jena.query.QueryFactory'
 include_class 'com.hp.hpl.jena.query.QueryExecutionFactory'
 include_class 'com.hp.hpl.jena.query.ResultSetFormatter'
+include_class 'com.hp.hpl.jena.sparql.core.Prologue'
 
 
 include_class 'java.lang.System'
@@ -27,7 +28,6 @@ class OntologyController < ApplicationController
   end
   
   def search
-    
     session[:prefixes].remove("")
     prefixes_map = session[:prefixes]
     
@@ -58,7 +58,16 @@ class OntologyController < ApplicationController
     qe = QueryExecutionFactory.create(query, MODEL)
     results = qe.execSelect()
     
-    @results = ResultSetFormatter.asText(results)
+    sup_model = ModelFactory.createOntologyModel(OntModelSpec::OWL_MEM)
+
+    
+    @results = ResultSetFormatter.asText(results, Prologue.new(sup_model.setNsPrefixes(prefixes_map))) 
+    
+    
+    #prefixes_map.each do |key, value|
+    #  @results.gsub!(value, key + "#")
+    #end
+    
     
     qe.close()
     
@@ -88,5 +97,6 @@ class OntologyController < ApplicationController
     end
     session[:prefixes][@e_value] = @e_uri
   end
+  
   
 end

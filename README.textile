@@ -1,0 +1,38 @@
+|Authors|Tullio Landoni|
+|Email Addresses|tuland[at]gmail[dot]com|
+
+h1. Query Tester
+
+h2. Debian Configuration
+
+* rubygems: ruby package manager
+
+@sudo apt-get install jruby libyaml-ruby rubygems@
+
+h2. Required gems
+
+* mongrel: web server
+* haml: html templates builder
+
+@sudo jruby -S gem update --system@
+
+@sudo jruby -S gem install rails mongrel jdbc-mysql activerecord-jdbcmysql-adapter activerecord-jdbc-adapter haml haml-edge activerdf_jena jruby-openssl@
+
+
+h2. DBMS Configuration
+
+* MYSQL
+
+Edit @username@ and @password@ (development) in @Config/database.yml@ 
+
+('development mode' temporarily)
+
+
+h2. Start server 
+
+* Mongrel (port: 3000 [background])
+
+jruby -S script/server -p 3000 &
+
+('development mode' temporarily)
+

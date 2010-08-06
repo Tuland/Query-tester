@@ -1386,3 +1386,672 @@ Processing OntologyController#load (for 10.63.188.153 at 2010-08-04 20:36:42) [P
 Rendering ontology/load
 Rendered ontology/_sparql_form (33.0ms)
 Completed in 42ms (View: 37, DB: 1) | 200 OK [http://10.63.188.153/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-04 22:01:31) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 201ms (View: 195, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-04 22:01:46) [POST]
+  Parameters: {"authenticity_token"=>"QTE4ermMBvSVj4Ik2aCiW3C/iXRyh0AsJOqOHVFvwhs="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (243.0ms)
+Completed in 289ms (View: 279, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-04 22:02:56) [POST]
+  Parameters: {"authenticity_token"=>"QTE4ermMBvSVj4Ik2aCiW3C/iXRyh0AsJOqOHVFvwhs=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 533ms (View: 30, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 11:17:44) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (20.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 301ms (View: 294, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 11:17:56) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (256.0ms)
+Completed in 387ms (View: 377, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 10.114.149.194 at 2010-08-05 11:20:28) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://10.114.149.194/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 10.114.149.194 at 2010-08-05 11:42:59) [POST]
+  Parameters: {"authenticity_token"=>"IuKo9PLqJYA6CbpzrW1KSlDiPCFRSi4OZZcRZ5eUSkY="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (306.0ms)
+Completed in 323ms (View: 317, DB: 0) | 200 OK [http://10.114.149.194/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 11:54:53) [GET]
+
+NativeException (com.hp.hpl.jena.shared.JenaException: java.net.ConnectException: Connection refused):
+  com/hp/hpl/jena/rdf/arp/JenaReader.java:91:in `read'
+  com/hp/hpl/jena/rdf/model/impl/ModelCom.java:196:in `read'
+  app/controllers/ontology_controller.rb:380:in `load'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+  -e:2
+
+Rendered rescues/_trace (184.0ms)
+Rendered rescues/_request_and_response (18.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 11:55:17) [GET]
+
+NativeException (com.hp.hpl.jena.shared.JenaException: java.net.ConnectException: Connection refused):
+  com/hp/hpl/jena/rdf/arp/JenaReader.java:91:in `read'
+  com/hp/hpl/jena/rdf/model/impl/ModelCom.java:196:in `read'
+  app/controllers/ontology_controller.rb:380:in `load'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+  -e:2
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 11:56:46) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 142ms (View: 136, DB: 1) | 200 OK [http://127.0.0.1/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 11:57:00) [POST]
+  Parameters: {"authenticity_token"=>"wuNSZl5yD7zM40UnvOyq7m/wtRwDxUjL2rD17+pNFbA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (238.0ms)
+Completed in 284ms (View: 273, DB: 0) | 200 OK [http://127.0.0.1/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 12:46:44) [GET]
+
+NativeException (com.hp.hpl.jena.shared.JenaException: java.net.ConnectException: Connection refused):
+  com/hp/hpl/jena/rdf/arp/JenaReader.java:91:in `read'
+  com/hp/hpl/jena/rdf/model/impl/ModelCom.java:196:in `read'
+  app/controllers/ontology_controller.rb:380:in `load'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (189.0ms)
+Rendered rescues/_request_and_response (19.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 12:47:31) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 768ms (View: 761, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 12:47:44) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (275.0ms)
+Completed in 325ms (View: 313, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 12:48:26) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 12:48:36) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (310.0ms)
+Completed in 334ms (View: 328, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 12:49:03) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 12:49:14) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (86.0ms)
+Completed in 110ms (View: 102, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 12:49:45) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 48ms (View: 43, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 12:49:55) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (56.0ms)
+Completed in 93ms (View: 88, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 12:50:42) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 1155ms (View: 39, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 12:51:30) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 97ms (View: 34, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 12:52:01) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 53ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 12:52:34) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o \n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 79ms (View: 27, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 12:53:07) [POST]
+  Parameters: {"value"=>"r", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_8", "old_prefix"=>"rdfs", "amp"=>nil, "uri"=>"http://www.w3.org/2000/01/rdf-schema#"}
+Rendering ontology/edit
+Completed in 37ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=rdfs&amp;uri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 12:53:32) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o \n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p r:domain ?o .\n?p r:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 79ms (View: 41, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 12:54:00) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (7.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 14:30:05) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (46.0ms)
+Completed in 92ms (View: 86, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 14:30:36) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 86ms (View: 28, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 16:56:40) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 23ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 16:56:52) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (56.0ms)
+Completed in 87ms (View: 82, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 16:57:27) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 215ms (View: 111, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 16:57:59) [POST]
+  Parameters: {"value"=>"erlag", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 16:58:16) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 64ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 16:59:11) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 67ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 17:01:03) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (26.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 17:01:14) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (65.0ms)
+Completed in 92ms (View: 80, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:01:45) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 67ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 17:03:10) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:03:23) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 81ms (View: 34, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 17:06:22) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 17:06:32) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (50.0ms)
+Completed in 67ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:07:06) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+NativeException (java.lang.NullPointerException: null):
+  java/io/Writer.java:70:in `<init>'
+  java/io/OutputStreamWriter.java:131:in `<init>'
+  com/hp/hpl/jena/util/FileUtils.java:65:in `asUTF8'
+  com/hp/hpl/jena/util/FileUtils.java:71:in `asPrintWriterUTF8'
+  com/hp/hpl/jena/sparql/resultset/TextOutput.java:115:in `write'
+  com/hp/hpl/jena/sparql/resultset/TextOutput.java:104:in `write'
+  com/hp/hpl/jena/sparql/resultset/TextOutput.java:51:in `format'
+  com/hp/hpl/jena/query/ResultSetFormatter.java:99:in `out'
+  com/hp/hpl/jena/query/ResultSetFormatter.java:51:in `out'
+  app/controllers/ontology_controller.rb:50:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (195.0ms)
+Rendered rescues/_request_and_response (17.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:16:20) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 49ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:18:19) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 48ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:31:59) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 79ms (View: 37, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:32:58) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+NameError (no constructor with arguments matching [class java.util.HashMap] on object #<Java::ComHpHplJenaSparqlCore::Prologue:0x0>):
+  app/controllers/ontology_controller.rb:62:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:34:04) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+NameError (no constructor with arguments matching [class java.util.HashMap] on object #<Java::ComHpHplJenaSparqlCore::Prologue:0x0>):
+  app/controllers/ontology_controller.rb:62:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:37:26) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 67ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 17:42:00) [GET]
+
+NativeException (java.lang.NullPointerException: null):
+  com/hp/hpl/jena/shared/impl/PrefixMappingImpl.java:140:in `checkLegal'
+  com/hp/hpl/jena/shared/impl/PrefixMappingImpl.java:55:in `setNsPrefix'
+  com/hp/hpl/jena/graph/compose/PolyadicPrefixMappingImpl.java:40:in `setNsPrefix'
+  com/hp/hpl/jena/rdf/model/impl/ModelCom.java:776:in `setNsPrefix'
+  app/controllers/ontology_controller.rb:85
+  app/controllers/ontology_controller.rb:380:in `load'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 17:45:55) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 44ms (View: 40, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 17:46:07) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (48.0ms)
+Completed in 68ms (View: 63, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 17:46:35) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:47:06) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 50ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 17:47:50) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 17:48:01) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (48.0ms)
+Completed in 72ms (View: 65, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:48:33) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 45ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 17:48:51) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:49:04) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 41ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:50:09) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 52ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:56:11) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+TypeError (cannot convert instance of class org.jruby.java.proxies.ConcreteJavaProxy to interface com.hp.hpl.jena.shared.PrefixMapping):
+  app/controllers/ontology_controller.rb:64:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:57:50) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+TypeError (cannot convert instance of class org.jruby.java.proxies.ConcreteJavaProxy to interface com.hp.hpl.jena.shared.PrefixMapping):
+  app/controllers/ontology_controller.rb:63:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-05 17:58:01) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 121ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-05 17:58:12) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (72.0ms)
+Completed in 114ms (View: 108, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-05 17:58:29) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:58:43) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+
+TypeError (cannot convert instance of class org.jruby.java.proxies.ConcreteJavaProxy to interface com.hp.hpl.jena.shared.PrefixMapping):
+  app/controllers/ontology_controller.rb:63:in `search'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-05 17:59:49) [POST]
+  Parameters: {"authenticity_token"=>"7HjU4UqKr0DgVdoFneBkD0L3KfrRKkONFKEHPjGphFA=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 49ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-06 10:41:44) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 278ms (View: 268, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-06 10:41:55) [POST]
+  Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (240.0ms)
+Completed in 293ms (View: 283, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-06 10:42:04) [POST]
+  Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (214.0ms)
+Completed in 229ms (View: 223, DB: 1) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-06 10:42:23) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 33ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-06 10:43:57) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 132ms (View: 127, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-06 10:44:07) [POST]
+  Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (79.0ms)
+Completed in 99ms (View: 91, DB: 0) | 200 OK [http://0.0.0.0/ontology/load]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-06 10:44:24) [POST]
+  Parameters: {"value"=>"erl", "authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-06 10:44:51) [POST]
+  Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 1177ms (View: 30, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#edit (for 127.0.0.1 at 2010-08-06 10:45:28) [POST]
+  Parameters: {"value"=>"erl1", "authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "editorId"=>"id_12", "old_prefix"=>"erlangen-crm_090330_5_0_1", "amp"=>nil, "uri"=>"http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#"}
+Rendering ontology/edit
+Completed in 35ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/ontology/edit?old_prefix=erlangen-crm_090330_5_0_1&amp;uri=http%3A%2F%2Fwww8.informatik.uni-erlangen.de%2FIMMD8%2FServices%2Fcidoc-crm%2Ferlangen-crm_090330_5_0_1.owl%23]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#search (for 127.0.0.1 at 2010-08-06 10:45:38) [POST]
+  Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
+Rendering ontology/search
+Completed in 64ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/ontology/search]
