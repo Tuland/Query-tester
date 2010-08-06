@@ -12,7 +12,7 @@ h2. Debian configuration
 h2. Required gems
 
 * mongrel: web server
-* haml: html templates builder
+* haml: html template builder
 
 @sudo jruby -S gem update --system@
 
