@@ -25,6 +25,7 @@ class OntologyController < ApplicationController
   
   def index
     @header = "Query Tester"
+    session[:onto] = Onto.new(BASE)
   end
   
   def search
@@ -79,6 +80,9 @@ class OntologyController < ApplicationController
     @prefix_map = MODEL.getNsPrefixMap
 
     session[:prefixes] = @prefix_map.dup
+    
+    ontology = session[:onto]
+    puts "####################" + ontology.base
     
   end
 

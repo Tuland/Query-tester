@@ -1,0 +1,8 @@
+%h1= "File Upload"
+- form_tag ({:action => 'uploadFile'}, :multipart => true) do
+  %p
+    %label{:for => 'upload_file'}Select File
+    = file_field 'upload', 'datafile'
+  = submit_tag "Upload"
+
+		

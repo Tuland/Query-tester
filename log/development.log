@@ -2100,3 +2100,216 @@ Processing OntologyController#search (for 127.0.0.1 at 2010-08-06 12:39:11) [POS
   Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
 Rendering ontology/search
 Completed in 66ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-18 11:35:29) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 248ms (View: 239, DB: 0) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-18 11:35:52) [GET]
+
+ActionView::MissingTemplate (Missing template upload/uploadFile.erb in view path app/views):
+  app/controllers/upload_controller.rb:3:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-18 11:36:55) [GET]
+Rendering upload/uploadFile
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0x3dfc97>) on line #2 of app/views/upload/uploadFile.html.haml:
+1: %h1= "File Upload"
+2: = start_form_tag ({:action => 'uploadFile'}, :multipart => true)
+3: %p
+4:   %label{:for => 'upload_file'}Select File
+5:   = file_field 'upload', 'datafile'
+
+    app/views/upload/uploadFile.html.haml:2:in `_run_haml_app47views47upload47uploadFile46html46haml'
+    haml (3.0.14) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/upload_controller.rb:3:in `index'
+    haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (201.0ms)
+Rendered rescues/_request_and_response (19.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-18 11:37:04) [GET]
+Rendering upload/uploadFile
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xe9a4d6>) on line #2 of app/views/upload/uploadFile.html.haml:
+1: %h1= "File Upload"
+2: = start_form_tag ({:action => 'uploadFile'}, :multipart => true)
+3: %p
+4:   %label{:for => 'upload_file'}Select File
+5:   = file_field 'upload', 'datafile'
+
+    app/views/upload/uploadFile.html.haml:2:in `_run_haml_app47views47upload47uploadFile46html46haml'
+    haml (3.0.14) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    app/controllers/upload_controller.rb:3:in `index'
+    haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-18 11:44:29) [GET]
+Rendering upload/uploadFile
+Completed in 39ms (View: 35, DB: 1) | 200 OK [http://0.0.0.0/upload]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#uploadFile (for 127.0.0.1 at 2010-08-18 11:46:13) [POST]
+  Parameters: {"authenticity_token"=>"7OjxLA5O0zIyiiM9ugfNbpxQhGROLKFwF8lJAd7s1U8=", "upload"=>{"datafile"=>#<File:/var/folders/qk/qk-rWbAlHle6IYUHAQiFiU+++TI/-Tmp-/RackMultipart.400.40461>}, "commit"=>"Upload"}
+Completed in 42ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/upload/uploadFile]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:14:49) [GET]
+
+ArgumentError (wrong # of arguments(1 for 0)):
+  app/controllers/ontology_controller.rb:28:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (181.0ms)
+Rendered rescues/_request_and_response (21.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:17:41) [GET]
+
+ActiveRecord::ActiveRecordError (Table ontos does not exist):
+  app/models/onto.rb:6:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:18:32) [GET]
+
+NoMethodError (undefined method `attr_accessible' for Onto:Class):
+  app/models/onto.rb:3
+  app/models/onto.rb:380:in `load'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:19:14) [GET]
+
+ArgumentError (wrong # of arguments(1 for 0)):
+  app/models/onto.rb:5:in `initialize'
+  app/models/onto.rb:5:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:23:13) [GET]
+
+ArgumentError (wrong # of arguments(1 for 0)):
+  app/models/onto.rb:5:in `initialize'
+  app/models/onto.rb:5:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (10.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:23:46) [GET]
+
+ArgumentError (wrong # of arguments(0 for 1)):
+  app/controllers/ontology_controller.rb:28:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:24:09) [GET]
+
+ArgumentError (wrong # of arguments(1 for 0)):
+  app/models/onto.rb:5:in `initialize'
+  app/models/onto.rb:5:in `initialize'
+  app/controllers/ontology_controller.rb:28:in `new'
+  app/controllers/ontology_controller.rb:28:in `index'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:24:55) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 558ms (View: 529, DB: 0) | 200 OK [http://localhost/ontology]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-24 10:25:12) [POST]
+  Parameters: {"authenticity_token"=>"MVFJ+ngrYzQdzc5t2G1eZHRqc0Xb/T2G4gGH/2C5+Eo="}
+
+NoMethodError (undefined method `base' for nil:NilClass):
+  app/controllers/ontology_controller.rb:84:in `load'
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 10:28:02) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 37ms (View: 16, DB: 0) | 200 OK [http://localhost/ontology]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#load (for 127.0.0.1 at 2010-08-24 10:28:12) [POST]
+  Parameters: {"authenticity_token"=>"MVFJ+ngrYzQdzc5t2G1eZHRqc0Xb/T2G4gGH/2C5+Eo="}
+Rendering ontology/load
+Rendered ontology/_sparql_form (265.0ms)
+Completed in 307ms (View: 288, DB: 1) | 200 OK [http://localhost/ontology/load]
