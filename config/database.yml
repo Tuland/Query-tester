@@ -19,8 +19,8 @@ development:
   #driver: com.mysql.jdbc.Driver
   #url: jdbc:mysql://localhost/query_tester_dev
   database: query_tester_dev
-  username: root
-  password: test
+  username: query_tester_dev
+  password: qt-db-user666
   #pool: 5
   #timeout: 5000
 

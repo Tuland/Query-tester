@@ -2100,3 +2100,69 @@ Processing OntologyController#search (for 127.0.0.1 at 2010-08-06 12:39:11) [POS
   Parameters: {"authenticity_token"=>"uoB9fS83fu/HyqPy7lFAy+kdd50qjYI585zoE8ImHNw=", "query"=>{"select_enable"=>"1", "select"=>"?s ?p ?o\n", "construct"=>"", "where_enable"=>"1", "where"=>"{ \n?p rdfs:domain ?o .\n?p rdfs:range ?s .\n}\n", "other_enable"=>"0", "other"=>""}, "commit"=>"Submit"}
 Rendering ontology/search
 Completed in 66ms (View: 29, DB: 0) | 200 OK [http://0.0.0.0/ontology/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OntologyController#index (for 127.0.0.1 at 2010-08-24 13:49:14) [GET]
+Rendering template within layouts/main
+Rendering ontology/index
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 210ms (View: 199, DB: 1) | 200 OK [http://0.0.0.0/ontology]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-24 13:54:01) [GET]
+
+ActionController::RoutingError (No route matches "/upload" with {:method=>:get}):
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-24 13:59:04) [GET]
+
+ActionController::RoutingError (No route matches "/upload" with {:method=>:get}):
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-24 13:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/upload" with {:method=>:get}):
+  haml (3.0.14) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-24 14:01:02) [GET]
+Rendering template within layouts/main
+Rendering upload/uploadFile
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (4.0ms)
+Completed in 352ms (View: 345, DB: 1) | 200 OK [http://0.0.0.0/upload]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#index (for 127.0.0.1 at 2010-08-24 14:06:10) [GET]
+Rendering template within layouts/main
+Rendering upload/uploadFile
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/upload]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#uploadFile (for 127.0.0.1 at 2010-08-24 14:06:49) [POST]
+  Parameters: {"authenticity_token"=>"9qmox31JHn+D3XxNV2/lmQijd6VWIm3PV4Pf1HPR3UE=", "upload"=>{"datafile"=>#<File:/var/folders/qk/qk-rWbAlHle6IYUHAQiFiU+++TI/-Tmp-/RackMultipart.4782.57002>}, "commit"=>"Upload"}
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/upload/uploadFile]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UploadController#uploadFile (for 127.0.0.1 at 2010-08-24 14:08:32) [POST]
+  Parameters: {"authenticity_token"=>"9qmox31JHn+D3XxNV2/lmQijd6VWIm3PV4Pf1HPR3UE=", "upload"=>{"datafile"=>#<File:/var/folders/qk/qk-rWbAlHle6IYUHAQiFiU+++TI/-Tmp-/RackMultipart.4782.57003>}, "commit"=>"Upload"}
+Completed in 27ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/upload/uploadFile]
