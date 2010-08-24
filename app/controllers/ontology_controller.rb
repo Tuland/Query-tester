@@ -20,7 +20,6 @@ class OntologyController < ApplicationController
   MODEL = ModelFactory.createOntologyModel(OntModelSpec::OWL_MEM)
   MODEL.read(URL, "RDF/XML")
   
-  
   layout 'main', :except => [ :load, :search, :edit ]
   
   def index
